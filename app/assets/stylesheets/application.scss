@@ -17,3 +17,12 @@
  /* "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables" */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ .bluetext {
+
+ }
+
+body {
+  background-color: lightgray;
+  font-family: 'Lora', serif;
+}
