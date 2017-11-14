@@ -4,7 +4,7 @@
 <p><%= link_to "Delete", list_path(@list),
                          :data => {:confirm => "You sure?",
                                    :method => "delete"} %></p>
-                                   
+
 <% if @list.tasks.any? %>
   <h4>Here are the tasks for this list:</h4>
 
@@ -12,7 +12,7 @@
     <% @list.tasks.each do |task| %>
       <li>
         <%= task.description %> |
-        <%= link_to "Edit", edit_list_task_path(@list, task)  %> |
+        <%= link_to "Edit task", edit_list_task_path(@list, task)  %> |
         <%= link_to "Delete", list_task_path(@list, task),
                                   :data => {:confirm => "Are you sure?",
                                                 :method => "delete"} %>
