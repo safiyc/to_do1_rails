@@ -6,21 +6,39 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-lists = [
-  ["Clean", "Room is messy"],
-  ["Laundry", "Clothes are dirty"],
-  ["Refill JT's meds", "She is running out"],
-  ["Testing entry with no description"]
-]
+List.destroy_all
 
-lists.each do |name, description|
-  List.create( name: name, description: description )
+# lists = [
+#   ["Clean", "Room is messy"],
+#   ["Laundry", "Clothes are dirty"],
+#   ["Refill JT's meds", "She is running out"],
+#   ["Testing entry with no description"]
+# ]
+#
+# lists.each do |name, description|
+#   List.create( name: name, description: description )
+# end
+
+10.times do |lists|
+  List.create!(name: Faker::Zelda.game, description: Faker::Zelda.location)
 end
 
 
-tasks = [
-  
-]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # tasks = [
 #   ["Gather clothes"]
