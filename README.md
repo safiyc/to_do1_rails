@@ -35,3 +35,9 @@ to alter tables in database:
 -rails generate migration verb_describe (a migration file is generated where we can specify table alters like add/remove columns)
 -rake db:migrate (run after migration file is updated); schema is auto updated after
 -rake db:test:prepare (to clone development database)
+
+to seed a database so app loads with data:
+-go to db/seeds.rb
+-create entries for lists/tasks
+-run rake db:seed
+-(if creating on a new device, run rake db:setup to create database, tables, and add seeded data from seeds file)
