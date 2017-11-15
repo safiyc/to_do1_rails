@@ -15,15 +15,15 @@ List.destroy_all
 #   ["Testing entry with no description"]
 # ]
 #
-# lists.each do |name, description|
-#   List.create( name: name, description: description )
+# lists.each do |namex, descriptiona|
+#   List.create( name: namex, description: descriptiona)
 # end
 
 10.times do |lists|
   List.create!(name: Faker::Zelda.game, description: Faker::Zelda.location)
 end
 
-
+p "Apparently I created seeds for Zelda games. This message is printed in the console."
 
 
 
